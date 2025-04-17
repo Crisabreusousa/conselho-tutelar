@@ -1,0 +1,146 @@
+/* Estilo para a imagem no topo */
+.galeria {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .galeria h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .imagens img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imagens img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo geral do header */
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0057b7;
+    color: white;
+  }
+  
+  /* Estilo para as seções */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efeito de aumento e elevação da caixa ao passar o mouse */
+  .funcoes-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .funcoes-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para o botão "Saiba Mais" */
+  .saiba-mais {
+    background-color: #0057b7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .saiba-mais:hover {
+    background-color: #004c99;
+  }
+  
+  /* Estilo para a parte do "Saiba Mais" que será exibida */
+  .info-oculta {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #mais-info.show {
+    display: block;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f2f2f2;
+    padding: 15px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+    transform: translateY(-4px);
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 768px) {
+    .imagens {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imagens img {
+      width: 90%;
+      height: auto;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 18px;
+    }
+  
+    header h1, .galeria h2 {
+      font-size: 22px;
+    }
+  
+    section {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    p, li {
+      font-size: 16px;
+    }
+  }
+  
